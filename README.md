@@ -26,7 +26,7 @@
 - ### RxJava
 
 - ### <strong>REST API with <strong>MVVM and <strong>Retrofit2 and <strong>Cache (Room)
-- 
+
 <ol>
 <li>(rest api) using <strong>Retrofit2</strong></li>
 <li><strong>MVVM Architecture</strong>: ViewModel, Repository, Client structure</li>
