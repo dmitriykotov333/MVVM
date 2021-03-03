@@ -25,11 +25,11 @@
 
 - ### RxJava
 
-- ### <strong>REST API with <strong>MVVM and <strong>Retrofit2 and <strong>Cache (Room)
+- ### REST API with MVVM and Retrofit2 and Cache (Room)
 
 <ol>
-<li>(rest api) using <strong>Retrofit2</strong></li>
-<li><strong>MVVM Architecture</strong>: ViewModel, Repository, Client structure</li>
+<li>(rest api) using <strong>Retrofit2</li>
+<li>MVVM Architecture</strong>: ViewModel, Repository, Client structure</li>
 <li>ViewModels and AndroidViewModels</li> 
 <li>Observables, LiveData, MutableLiveData and MediatorLiveData</li>
 <li>Caching data for when the network goes offline</li>
@@ -42,7 +42,7 @@
 <li>Converting Retrofit Calls to LiveData (Call Adapters)</li>
 </ol>
   
-<strong>Functional </strong>
+## Functional
 <br><br>
 <ol>
 <li>Multiple View Types in a Recyclerview</li>
