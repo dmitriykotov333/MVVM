@@ -1,7 +1,7 @@
 # MVVM
 
 - Dagger
-
+-
 <li>Dagger version 2.2+ (Dagger-Android)</li>
 <li>Dagger-android basics:
   <ol>
