@@ -42,6 +42,8 @@
 <li>Converting Retrofit Calls to LiveData (Call Adapters)</li>
 </ol>
   
+  <img src="https://github.com/dmitriykotov333/MVVM/blob/master/preview%20(1).gif">
+  
 ## Functional
 <ol>
 <li>Multiple View Types in a Recyclerview</li>
