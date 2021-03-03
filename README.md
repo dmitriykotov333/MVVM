@@ -1,6 +1,7 @@
 # MVVM
 
 - Dagger
+
 <li>Dagger version 2.2+ (Dagger-Android)</li>
 <li>Dagger-android basics:
   <ol>
@@ -20,8 +21,11 @@
 <li>ViewModel Injection</li>
 
 - Jetpack Navigation Component
+
 - RxJava
+
 - <strong>REST API with <strong>MVVM and <strong>Retrofit2 and <strong>Cache (Room)
+
 <li>(rest api) using <strong>Retrofit2</strong></li>
 <li><strong>MVVM Architecture</strong>: ViewModel, Repository, Client structure</li>
 <li>ViewModels and AndroidViewModels</li> 
