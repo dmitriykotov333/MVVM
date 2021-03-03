@@ -43,6 +43,7 @@
 </ol>
   
   <img src="https://github.com/dmitriykotov333/MVVM/blob/master/preview%20(1).gif">
+  <img src="https://github.com/dmitriykotov333/MVVM/blob/master/Screenshot_2021-03-03-20-48-59-244_com.kotdev.food.png">
   
 ## Functional
 <ol>
