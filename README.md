@@ -26,7 +26,8 @@
 - RxJava
 
 - <strong>REST API with <strong>MVVM and <strong>Retrofit2 and <strong>Cache (Room)
-
+- 
+<ol>
 <li>(rest api) using <strong>Retrofit2</strong></li>
 <li><strong>MVVM Architecture</strong>: ViewModel, Repository, Client structure</li>
 <li>ViewModels and AndroidViewModels</li> 
@@ -39,7 +40,8 @@
 <li>Dealing with Network Errors and slow network speeds</li>
 <li>OkHttp Network Timeouts</li>
 <li>Converting Retrofit Calls to LiveData (Call Adapters)</li>
-
+</ol>
+  
 <strong>Functional </strong>
 <br><br>
 <ol>
