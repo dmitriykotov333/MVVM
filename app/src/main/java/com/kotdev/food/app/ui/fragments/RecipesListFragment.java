@@ -15,6 +15,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.kotdev.food.R;
 import com.kotdev.food.databinding.FragmentRecipesListBinding;
@@ -36,7 +37,8 @@ public class RecipesListFragment extends DaggerFragment implements SwipeRefreshL
     private static final String TAG = "RecipesListFragment";
     private FragmentRecipesListBinding binding;
     private RecipesViewModel viewModel;
-    private String key;
+    private static String key;
+    private static boolean arguments = true;
 
     @Inject
     ViewModelProviderFactory viewModelProviderFactory;
@@ -47,21 +49,25 @@ public class RecipesListFragment extends DaggerFragment implements SwipeRefreshL
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         viewModel = new ViewModelProvider(this, viewModelProviderFactory).get(RecipesViewModel.class);
-        if (getArguments() != null) {
-            adapter.displayLoading();
-            key = requireArguments().getString("recipe");
-            searchRecipeApi(key);
+        Log.d(TAG, "onViewCreated: " + arguments);
+        ((MainActivity) requireActivity()).searchView.setVisibility(View.VISIBLE);
+        if (arguments) {
+            if (getArguments() != null) {
+                adapter.displayLoading();
+                key = requireArguments().getString("recipe");
+                searchRecipeApi(key);
+            }
         }
         binding.swipeRefreshLayout.setOnRefreshListener(this);
         initSearchView();
         initRecyclerView();
         subscribeObservers();
+
     }
 
     private void searchRecipeApi(String query) {
         binding.recipeList.smoothScrollToPosition(0);
         viewModel.searchRecipesApi(query, 1);
-        ((MainActivity) requireActivity()).searchView.clearFocus();
         binding.swipeRefreshLayout.setRefreshing(false);
     }
 
@@ -93,8 +99,17 @@ public class RecipesListFragment extends DaggerFragment implements SwipeRefreshL
     }
 
     @Override
+    public void onDestroy() {
+        super.onDestroy();
+        arguments = true;
+        ((MainActivity) requireActivity()).searchView.setIconified(true);
+        ((MainActivity) requireActivity()).searchView.onActionViewCollapsed();
+    }
+
+    @Override
     public void onDestroyView() {
         super.onDestroyView();
+        arguments = false;
         viewModel.cancelSearchRequest();
     }
 

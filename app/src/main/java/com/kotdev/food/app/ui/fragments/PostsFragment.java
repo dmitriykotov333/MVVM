@@ -46,11 +46,10 @@ public class PostsFragment extends DaggerFragment {
         postsViewModel = new ViewModelProvider(this, viewModelProviderFactory).get(PostsViewModel.class);
         initRecyclerView();
         subscribeObservers();
-
+        NavController navController = Navigation.findNavController(requireActivity(), R.id.nav_host_fragment);
         ((MainActivity) requireActivity()).searchView.setVisibility(View.VISIBLE);
         ((MainActivity) requireActivity()).searchView.setOnSearchClickListener(v -> {
-            NavController navController = Navigation.findNavController(requireActivity(), R.id.nav_host_fragment);
-            if (!Objects.requireNonNull(Objects.requireNonNull(navController.getCurrentDestination()).getLabel()).toString().equals("fragment_recipes_list")) {
+            if (!Objects.requireNonNull(Objects.requireNonNull(navController.getCurrentDestination()).getLabel()).toString().equals("Recipes")) {
                 Navigation.findNavController(requireView())
                         .navigate(R.id.action_global_recipesListFragment);
             }

@@ -19,14 +19,7 @@
         tools:layout="@layout/fragment_post">
         <action
             android:id="@+id/action_postsScreen_to_detalRecipeFragment"
-            app:destination="@id/detalRecipeFragment"
-            app:enterAnim="@anim/nav_default_enter_anim"
-            app:exitAnim="@anim/nav_default_exit_anim"
-            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
-            app:popExitAnim="@anim/nav_default_pop_exit_anim"
-            app:launchSingleTop="true"
-            app:popUpTo="@+id/postsScreen"
-            app:popUpToInclusive="true"/>
+            app:destination="@id/detalRecipeFragment" />
     </fragment>
     <fragment
         android:id="@+id/recipesListFragment"
@@ -43,7 +36,14 @@
         tools:layout="@layout/fragment_detal_recipe" >
         <action
             android:id="@+id/action_detalRecipeFragment_to_postsScreen"
-            app:destination="@id/postsScreen" />
+            app:destination="@id/postsScreen"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:launchSingleTop="true"
+            app:popUpTo="@+id/postsScreen"
+            app:popUpToInclusive="true"/>
     </fragment>
 
 </navigation>
