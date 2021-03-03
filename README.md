@@ -1,15 +1,15 @@
 # MVVM
 
 - ### Dagger
-  <ol>
-  <li>Dagger version 2.2+ (Dagger-Android)</li>
-  <li>Dagger-android basics:
-    <ol>
-      <li>DaggerApplication</li>
-      <li>DaggerAppCompatActivity </li>
-      <li>DaggerFragment</li>
-    </ol>
-  </li>
+<ol>
+<li>Dagger version 2.2+ (Dagger-Android)</li>
+<li>Dagger-android basics:
+<ol>
+<li>DaggerApplication</li>
+<li>DaggerAppCompatActivity </li>
+<li>DaggerFragment</li>
+</ol>
+</li>
 <li>@Provides, @Binds, @BindsInstance explanation</li>
 <li>Map Multibinding</li>
 <li>Subcomponents</li>
