@@ -42,8 +42,8 @@
 <li>Converting Retrofit Calls to LiveData (Call Adapters)</li>
 </ol>
   
-  <img src="https://github.com/dmitriykotov333/MVVM/blob/master/preview%20(1).gif">
-  <img src="https://github.com/dmitriykotov333/MVVM/blob/master/Screenshot_2021-03-03-20-48-59-244_com.kotdev.food.png" width="30%" height="30%">
+  <img src="https://github.com/dmitriykotov333/MVVM/blob/master/preview2.gif">
+  <img src="https://github.com/dmitriykotov333/MVVM/blob/master/preview1.png" width="30%" height="30%">
   
 ## Functional
 <ol>
