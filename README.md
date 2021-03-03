@@ -52,4 +52,4 @@
 </ol>
 <br>
 
-<img src="https://github.com/dmitriykotov333/MVVM/blob/room/uml.PNG" >
+<img src="https://github.com/dmitriykotov333/MVVM/uml.PNG" >
