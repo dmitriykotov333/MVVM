@@ -43,7 +43,6 @@
 </ol>
   
 ## Functional
-<br><br>
 <ol>
 <li>Multiple View Types in a Recyclerview</li>
 <li><strong>RecyclerView Pagination</strong></li>
