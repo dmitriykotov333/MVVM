@@ -14,17 +14,11 @@ import com.kotdev.food.app.ui.activities.MainActivity;
 import dagger.Module;
 import dagger.android.ContributesAndroidInjector;
 
-/**
- * Нам всегда нужно добавлять все наши подкомпоненты или наши действия с помощью инжектора
- */
+
 @Module
 public abstract class ActivityBuilderModule {
 
 
-    /**
-     * The method must have no parameters. SubComponent for Auth
-     * @return
-     */
     @AuthScope
     @ContributesAndroidInjector (
             modules = {
